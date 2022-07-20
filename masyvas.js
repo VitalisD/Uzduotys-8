@@ -1,18 +1,20 @@
 "use strict"
 
-function manoSkaicius (skaicius){
-    let masyvas = [];
-    masyvas = document.querySelector('#papildyti').addEventListener('click', function (){
-        let skaicius;
-        skaicius = parseFloat(document.querySelector('#skaicius').value)});
-        masyvas.push(skaicius);
-        console.log(masyvas)
+let masyvas = [];
+function masyvoPildymas() {
+let skaicius;
+skaicius = document.querySelector('#skaicius').value;
+masyvas.push(skaicius);
+console.log(masyvas)
+document.querySelector("#rezultatas").innerHTML = masyvas;
+}
+
+document.querySelector('#papildyti').addEventListener('click', masyvoPildymas);
         
-    }
+    
      
  
         
 
 
-    //let masyvas;
-    //masyvas = 
+    
